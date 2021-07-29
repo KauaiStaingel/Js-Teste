@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style> 
+        body{
+            background-color: aqua;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        h1{
+            margin: auto;
+            text-align: center;
+            text-shadow: 1px 1px 4px black;
+            color: rgb(105, 66, 18);
+        }
+        main{
+            width: 600px;
+            background-color: rgb(255, 255, 255);
+            margin: 15px auto 10px auto;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px black;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            font-weight: bolder;
+            font-style: italic;
+            height: 100px;
+            margin: auto;
+            padding: 5px;
+            line-height: 100px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 1px 1px 5px rgb(0, 0, 0);
+        }  
+        div > p {
+            text-align: justify;
+        }
+        
+        div > img{
+            width: 30%;
+            border-radius: 50%;
+            display: block;
+            margin: auto;
+        }
+        div#res{
+            text-align: center;
+            margin: auto;
+            padding: 10px;
+        }
+      select {
+          width: 300px;
+      }
+        
+    </style>
+</head>
+
+<body >
+    <h1>
+        <h1>Contabilizando Numeros</h1>
+    </h1>
+    <main>
+        <div>
+            <p>Adicione Numeros <strong>(Entre 1 e 100)</strong> <input type="number" name="txtn" id="txtn"> <input type="button" value="Adicionar" onclick="adicionar()"></p>
+            <select name="selc" id="selc" size="10" ></select>
+            <p><input type="button" value="Finalizar" onclick="finalizar()"></p>
+        </div>
+        <div id="res">
+            
+        </div>
+    </main>
+    <footer>
+        <p>@Avktech.</p>
+    </footer>
+    <script src="script.js"></script>
